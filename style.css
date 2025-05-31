@@ -15,7 +15,7 @@ body {
 header {
   background-color: #afe0d180;
   color: white;
-  padding: 2rem;
+  padding: 10px;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ nav ul li a:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #333;
-  display: block;
+  display: none;
 }
 
 main {
@@ -189,4 +189,21 @@ footer {
 }
 #social-media a:hover {
   text-decoration: underline;
+}
+.hamburger-menu {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  /* Adjust section spacing and typography */
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 24px;
+  }
+
+  /* Adjust project grid */
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
+  }
 }
