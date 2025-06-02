@@ -337,15 +337,15 @@ toggleBtn.addEventListener('click', () => {
     }
     
     // Specific pattern matching for complex intents
-    if (containsAny(normalizedInput, ['current', 'now', 'present', 'currently doing'])) {
+    if (containsAny(normalizedInput, ['what is likho currently doing', 'what is he currently doing', 'tell me what he is doing now', 'tell me what he is doing now', 'now', 'present', 'currently doing'])) {
       return 'CURRENT_STATUS_INQUIRY';
     }
     
-    if (containsAny(normalizedInput, ['strength', 'good at', 'best at', 'excel'])) {
+    if (containsAny(normalizedInput, ['what are his strength', 'what is he good at', 'likho is good at what','good at', 'what he does best', 'best at', 'where does he excel'])) {
       return 'STRENGTHS_INQUIRY';
     }
     
-    if (containsAny(normalizedInput, ['reference', 'recommend', 'testimonial'])) {
+    if (containsAny(normalizedInput, [' what are his reference', 'recommend', 'testimonial'])) {
       return 'REFERENCE_INQUIRY';
     }
     
